@@ -2,6 +2,10 @@
 
 This repository contains the training runs, configuration settings, and optimized weights for detecting marine debris and underwater trash using the Ultralytics YOLOv8 framework.
 
+the other CV tasks
+object_count: https://github.com/mahmoudrabea01/object_count
+fire_and_smoke_detecation: https://github.com/mahmoudrabea01/fire_smoke_detection
+eye_vision: https://github.com/mahmoudrabea01/eye_vision_task
 ---
 
 ## 🚀 How to Clone or Pull this Repository
@@ -95,3 +99,4 @@ results = model.predict(source="ocean_trash.jpg", conf=0.25, save=True)
 ### Which file is better for deployment: `best.pt` or `last.pt`?
 * **`best.pt` is almost always preferred for deployment.** It represents the peak-performing state of the network during training, offering the highest accuracy on unseen datasets.
 * **`last.pt`** is simply the state of the model at the very last epoch. If training stops early or overfits in later stages, `last.pt` might actually exhibit degraded performance or high validation loss. It is primarily kept to resume interrupted training runs.
+
